@@ -1,0 +1,118 @@
+/* Variables básicas para colores, tamaños y tipografía */
+:root {
+  --fondo: #f2f6f9;           /* color de fondo principal */
+  --blanco: #ffffff;           /* color blanco */
+  --azul-oscuro: #005f88;      /* azul oscuro para títulos */
+  --azul: #0077b6;             /* azul para subtítulos y enlaces */
+  --gris: #6b7280;             /* gris para metadatos y pie de página */
+  --container-w: 1000px;       /* ancho máximo del contenedor */
+  --radio: 8px;                /* radio de bordes para tarjetas */
+  --gap: 1rem;                 /* espacio general */
+  font-family: Arial, Helvetica, sans-serif; /* tipografía */
+}
+
+/* ===== Reset básico ===== */
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--fondo);
+  color: #222;
+}
+
+/* ===== Contenedor central ===== */
+.container {
+  max-width: var(--container-w);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* ===== Cabecera ===== */
+header {
+  background: linear-gradient(90deg, var(--blanco), #e6f2fb);
+  border-bottom: 4px solid var(--azul-oscuro);
+  padding: 1.25rem 0;
+}
+
+header .container {
+  display: block;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  color: var(--azul-oscuro);
+  font-size: 1.6rem;
+}
+
+.meta {
+  margin: 0.25rem 0 0;
+  color: var(--gris);
+  font-size: 0.95rem;
+}
+
+/* ===== Tarjetas (secciones principales) ===== */
+.card {
+  background: var(--blanco);
+  border-radius: var(--radio);
+  padding: 1.25rem;
+  margin: 1.25rem 0;
+  box-shadow: 0 2px 8px rgba(20,30,40,0.05);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--azul-oscuro);
+}
+
+.card h3 {
+  color: var(--azul);
+  margin-bottom: 0.35rem;
+}
+
+/* ===== Párrafos y texto ===== */
+p {
+  margin: 0.6rem 0;
+  text-align: justify;
+}
+
+/* ===== Listas ===== */
+ul, ol {
+  margin: 0.5rem 0 0.5rem 1.2rem;
+}
+
+/* ===== Enlaces ===== */
+a {
+  color: var(--azul);
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* ===== Pie de página ===== */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--gris);
+  font-size: 0.95rem;
+  background: #e6f2fb;
+  border-top: 2px solid var(--azul-oscuro);
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+  .container {
+    padding: 0.75rem;
+  }
+  .card {
+    padding: 1rem;
+  }
+}

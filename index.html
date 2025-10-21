@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Investigación: Optimización, Usabilidad y Accesibilidad en el Desarrollo Web</title>
+  <meta name="description" content="Investigación académica sobre SEO, Usabilidad (DCU) y Accesibilidad web. Incluye análisis, recomendaciones y referencias en español.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabecera -->
+  <header>
+    <div class="container">
+      <h1>Investigación sobre SEO, Usabilidad y Accesibilidad en el Desarrollo Web</h1>
+      <p class="meta">Autor: Kendall Fernández Rojas · Asignatura: Diseño de Aplicaciones Web · Fecha: 20 de octubre de 2025</p>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container">
+    <!-- Introducción -->
+    <section id="introduccion" class="card">
+      <h2>Introducción</h2>
+      <p>
+        En la era digital, la presencia en línea de una organización o proyecto ya no depende únicamente de un buen diseño visual.
+        Para que un sitio web cumpla sus objetivos (visibilidad, conversión, servicio al usuario) debe abordarse desde tres ejes
+        complementarios: <strong>optimización para motores de búsqueda (SEO)</strong>, <strong>usabilidad y Diseño Centrado en el Usuario (DCU)</strong>,
+        y <strong>accesibilidad digital</strong>. Esta investigación desarrolla cada uno de estos ejes, presenta prácticas técnicas y de contenido,
+        y propone un conjunto de recomendaciones prácticas para su aplicación en proyectos web reales.
+      </p>
+      <p>
+        El propósito de esta investigación es ofrecer un documento de referencia que combine evidencia técnica (herramientas y métricas),
+        principios de diseño centrado en las personas y normas internacionales de accesibilidad, con el fin de facilitar su implementación
+        en un proyecto académico o profesional.
+      </p>
+    </section>
+
+    <!-- Metodología -->
+    <section id="metodologia" class="card">
+      <h2>Metodología</h2>
+      <p>
+        Esta investigación se basa en revisión bibliográfica de fuentes oficiales y reconocidas (manuales técnicos, guías de práctica profesional
+        y normas de accesibilidad), complementada con síntesis analítica y recomendaciones aplicables. Se priorizaron recursos en español
+        siempre que estuvieron disponibles; cuando la fuente principal está en inglés (por ser un estándar internacional), se indicó claramente.
+      </p>
+      <p>
+        Las fuentes principales consultadas fueron: la guía oficial de SEO de Google (Search Central), artículos y guías prácticas sobre diseño UX/DCU
+        en español, y las Pautas WCAG del W3C para accesibilidad. Las referencias completas aparecen al final del documento en formato APA 7.
+      </p>
+    </section>
+
+    <!-- DESARROLLO: SEO -->
+    <section id="seo" class="card">
+      <h2>1. SEO (Optimización para Motores de Búsqueda) y Rendimiento</h2>
+
+      <h3>1.1. Definición y alcance</h3>
+      <p>
+        El SEO comprende un conjunto de técnicas y buenas prácticas destinadas a mejorar la visibilidad de un sitio web en los resultados orgánicos
+        de motores de búsqueda. No es solo colocar palabras clave: implica estructurar el contenido y el código para que los rastreadores (bots)
+        identifiquen correctamente la temática, la relevancia y la autoridad de cada página.
+      </p>
+
+      <h3>1.2. Componentes principales del SEO</h3>
+      <ul>
+        <li><strong>SEO técnico:</strong> indexabilidad, uso correcto de etiquetas HTML, estructura de URLs, archivos <code>robots.txt</code> y sitemaps.</li>
+        <li><strong>Contenido:</strong> calidad informativa, intención de búsqueda (search intent), densidad de palabras clave, títulos y meta descripciones.</li>
+        <li><strong>Autoridad y enlaces:</strong> enlaces entrantes (backlinks) de sitios relevantes y reputados; también enlaces internos bien organizados.</li>
+        <li><strong>Rendimiento:</strong> velocidad de carga, Core Web Vitals (LCP, INP/FID, CLS) y experiencia en dispositivos móviles.</li>
+      </ul>
+
+      <h3>1.3. Core Web Vitals y rendimiento</h3>
+      <p>
+        Las métricas conocidas como <em>Core Web Vitals</em> (LCP, INP/FID y CLS) cuantifican la experiencia de carga, interactividad y estabilidad visual.
+        Google incorpora estas métricas como parte de su evaluación de experiencia de página, por lo que su mejora contribuye tanto a la usabilidad
+        real como al posicionamiento. Las mediciones deben realizarse con herramientas como PageSpeed Insights, Lighthouse y Search Console (datos de campo).
+      </p>
+
+      <h3>1.4. Recomendaciones prácticas (SEO y rendimiento)</h3>
+      <ol>
+        <li>Configurar títulos (<code>&lt;title&gt;</code>) y meta descripciones únicos y descriptivos en cada página.</li>
+        <li>Servir imágenes optimizadas (formatos modernos como WebP, tamaño correcto, <code>srcset</code>) y usar lazy loading cuando proceda.</li>
+        <li>Minimizar archivos CSS y JS y utilizar carga asíncrona para scripts no esenciales.</li>
+        <li>Habilitar compresión (gzip/ Brotli) y configurar cacheo de recursos estáticos en el servidor.</li>
+        <li>Garantizar diseño responsive y probar la experiencia móvil con herramientas de Google.</li>
+      </ol>
+
+      <h3>1.5. Indicadores para evaluar el SEO</h3>
+      <p>
+        Al monitorear SEO conviene combinar datos de Search Console (impresiones, clics, posición media) con analítica interna (sesiones, páginas/sesión,
+        tasa de conversión) y métricas técnicas (LCP, CLS, tiempo de carga). Un enfoque equilibrado ayuda a identificar si un problema es de contenido,
+        técnico o de percepción del usuario.
+      </p>
+    </section>
+
+    <!-- DESARROLLO: USABILIDAD / DCU -->
+    <section id="usabilidad" class="card">
+      <h2>2. Usabilidad Web y Diseño Centrado en el Usuario (DCU)</h2>
+
+      <h3>2.1. Concepto y relevancia</h3>
+      <p>
+        La usabilidad mide la facilidad con la que los usuarios pueden llevar a cabo tareas en un sitio. El DCU es una metodología que ubica al usuario
+        en el centro del proceso de diseño y desarrollo: identifica necesidades, diseña soluciones, prueba hipótesis y mejora iterativamente.
+        Un sitio con alta usabilidad reduce errores, acelera tareas y mejora la satisfacción del usuario.
+      </p>
+
+      <h3>2.2. Principios básicos del DCU</h3>
+      <ul>
+        <li><strong>Visibilidad del estado del sistema:</strong> el usuario debe recibir retroalimentación clara sobre acciones y procesos en curso.</li>
+        <li><strong>Correspondencia con el mundo real:</strong> usar lenguaje y metáforas familiares.</li>
+        <li><strong>Control y libertad:</strong> permitir deshacer acciones y navegar sin trabas.</li>
+        <li><strong>Consistencia y estándares:</strong> seguir patrones de interfaz conocidos evita confusión.</li>
+        <li><strong>Prevención de errores:</strong> formularios claros, validación en tiempo real y mensajes de ayuda.</li>
+      </ul>
+
+      <h3>2.3. Métodos de investigación y validación</h3>
+      <p>
+        Para diseñar centrado en el usuario se emplean técnicas como entrevistas, encuestas, tests de usabilidad (moderados o no moderados),
+        mapas de empatía, pruebas A/B y análisis de comportamiento (heatmaps, recorrido de clics). Estas técnicas permiten contrastar suposiciones
+        del equipo con evidencia real.
+      </p>
+
+      <h3>2.4. Aplicación práctica: ejemplo de mejora de una página de producto</h3>
+      <p>
+        Supongamos una página de producto con alta tasa de abandono en el formulario de compra. Aplicando DCU:
+      </p>
+      <ol>
+        <li>Investigar: entrevistas breves y recopilación de métricas para identificar el punto exacto de abandono.</li>
+        <li>Hipótesis: el formulario pide demasiada información o el botón de compra no es visible en móviles.</li>
+        <li>Prototipado: simplificar campos y hacer el CTA (llamada a la acción) más prominente.</li>
+        <li>Prueba con usuarios reales y comparación de métricas (tasa de abandono, tiempo en tarea).</li>
+        <li>Iterar según resultados.</li>
+      </ol>
+    </section>
+
+    <!-- DESARROLLO: ACCESIBILIDAD -->
+    <section id="accesibilidad" class="card">
+      <h2>3. Accesibilidad Web</h2>
+
+      <h3>3.1. Definición y justificación</h3>
+      <p>
+        La accesibilidad web busca que las personas con discapacidades puedan percibir, comprender, navegar e interactuar con la web.
+        Además de ser un imperativo ético, en muchos contextos es un requisito legal. Implementar accesibilidad mejora la experiencia para todos
+        (mejor contraste soporta lectura en exteriores, una navegación clara ayuda en pantallas pequeñas, etc.).
+      </p>
+
+      <h3>3.2. Principios WCAG</h3>
+      <p>
+        Las Pautas WCAG estructuran la accesibilidad en cuatro principios: <em>Perceptible, Operable, Comprensible y Robusto</em>.
+        Cada principio incluye criterios de éxito medibles (niveles A, AA, AAA) que ayudan a priorizar actuaciones en un proyecto.
+      </p>
+
+      <h3>3.3. Prácticas recomendadas</h3>
+      <ul>
+        <li>Proveer texto alternativo en imágenes que aporte significado (no solo repetir el título).</li>
+        <li>Etiquetar correctamente controles de formulario con <code>&lt;label&gt;</code> y asociar mediante <code>for</code> y <code>id</code>.</li>
+        <li>Garantizar contraste de color apropiado y permitir aumentar tamaño de letra sin que el contenido se rompa.</li>
+        <li>Permitir navegación completa mediante teclado y manejar el foco de manera predecible.</li>
+        <li>Evitar animaciones o movimientos que puedan provocar molestias; ofrecer controles para pausarlas o reducirlas.</li>
+      </ul>
+
+      <h3>3.4. Medición y herramientas</h3>
+      <p>
+        Para evaluar accesibilidad se recomienda combinar: auditorías manuales (revisión con checklist WCAG), pruebas con usuarios reales
+        (personas con distintas discapacidades) y herramientas automáticas (aXe, WAVE, Lighthouse). Las herramientas automáticas detectan
+        alrededor del 30–40% de los problemas; por eso la combinación con pruebas manuales es esencial.
+      </p>
+    </section>
+
+    <!-- ANÁLISIS: Conexión entre los tres ejes -->
+    <section id="analisis" class="card">
+      <h2>Análisis: cómo interactúan SEO, Usabilidad y Accesibilidad</h2>
+      <p>
+        Aunque tradicionalmente se etiquetan como disciplinas separadas, en la práctica SEO, usabilidad y accesibilidad se refuerzan mutuamente.
+        Por ejemplo, una estructura semántica clara (uso correcto de encabezados) mejora la accesibilidad (lectores de pantalla), la usabilidad
+        (facilita el escaneo visual) y el SEO (los motores entienden la jerarquía del contenido).
+      </p>
+      <p>
+        Las mejoras de rendimiento (optimizar imágenes, reducir scripts) benefician la velocidad de carga —lo que impacta positivamente en SEO— y reducen
+        la frustración del usuario, aumentando la usabilidad. Asimismo, prácticas de accesibilidad como etiquetas y descripciones enriquecen el contenido
+        textual, lo que puede ayudar a los motores de búsqueda a contextualizar mejor la página.
+      </p>
+
+      <h3>Prioridades recomendadas en proyectos pequeños</h3>
+      <ol>
+        <li>Primero: asegurar que la estructura semántica y el contenido cubran el objetivo (H1, H2, párrafos claros).</li>
+        <li>Segundo: optimizar rendimiento crítico (imágenes, caching, minimizar scripts).</li>
+        <li>Tercero: aplicar controles básicos de accesibilidad (alt, labels, contraste, navegación por teclado).</li>
+        <li>Continuo: pruebas con usuarios y monitoreo de métricas técnicas y de comportamiento.</li>
+      </ol>
+    </section>
+
+    <!-- CONCLUSIONES -->
+    <section id="conclusion" class="card">
+      <h2>Conclusiones y recomendaciones</h2>
+      <p>
+        La construcción de un sitio web eficaz requiere abordar simultáneamente aspectos técnicos, de contenido y de experiencia humana.
+        Implementar SEO sin considerar usabilidad y accesibilidad produce resultados limitados. De igual modo, diseñar una interfaz hermosa pero lenta
+        y poco accesible reduce su impacto. Por ello, se propone la siguiente hoja mínima de ruta para proyectos académicos o PYMEs:
+      </p>
+      <ul>
+        <li>Planificar desde el inicio: incluir objetivos de SEO, criterios de usabilidad y requisitos de accesibilidad en la fase de diseño.</li>
+        <li>Medir y repetir: combinar analytics, Search Console, pruebas de usabilidad y auditorías de accesibilidad.</li>
+        <li>Priorizar acciones con impacto alto/bajo coste: optimización de imágenes, mejora de metadatos, simplificación de formularios y etiquetas accesibles.</li>
+        <li>Documentar cambios y decisiones en el repositorio (README) para evidenciar seguimiento y buenas prácticas.</li>
+      </ul>
+    </section>
+
+    <!-- REFERENCIAS -->
+    <section id="referencias" class="card">
+      <h2>Referencias </h2>
+      <ol>
+        <li>Google Developers. (2025). <em>Guía de inicio de SEO</em>. Google Search Central. Recuperado de <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=es" target="_blank" rel="noopener">https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=es</a></li>
+        <li>Justinmind. (2024). <em>Diseño centrado en el usuario: qué es y cómo aplicarlo</em>. Recuperado de <a href="https://www.justinmind.com/es/blog/diseno-centrado-en-el-usuario/" target="_blank" rel="noopener">https://www.justinmind.com/es/blog/diseno-centrado-en-el-usuario/</a></li>
+        <li>W3C WAI. (s. f.). <em>Resumen de WCAG 2</em>. Web Accessibility Initiative. Recuperado de <a href="https://www.w3.org/WAI/standards-guidelines/wcag/es" target="_blank" rel="noopener">https://www.w3.org/WAI/standards-guidelines/wcag/es</a></li>
+        <li>Justinmind. (2025). <em>Guía completa de diseño UX</em>. Recuperado de <a href="https://www.justinmind.com/es/ux-diseno" target="_blank" rel="noopener">https://www.justinmind.com/es/ux-diseno</a></li>
+        <li>Gobierno de Argentina. (2017). <em>Pautas de accesibilidad para el contenido de la web (WCAG)</em> (PDF). Recuperado de <a href="https://www.argentina.gob.ar/sites/default/files/pautas-de-accesibilidad-para-el-contenido-de-la-web.pdf" target="_blank" rel="noopener">https://www.argentina.gob.ar/.../pautas-de-accesibilidad-para-el-contenido-de-la-web.pdf</a></li>
+      </ol>
+      <p class="small">Fecha de consulta: 20/10/2025</p>
+    </section>
+
+    <!-- Apéndice / Anexos (opcional) -->
+    <section id="anexos" class="card">
+      <h2>Anexos</h2>
+      <p>
+        Recomendaciones técnicas rápidas para implementaciones en proyectos estudiantiles:
+      </p>
+      <ul>
+        <li>Archivo <code>robots.txt</code> básico y sitemap.xml generado automáticamente (por ejemplo con herramientas gratuitas).</li>
+        <li>Incluir meta tags sociales (Open Graph / Twitter card) para compartir mejor el contenido.</li>
+        <li>Comprobar rendimiento con PageSpeed Insights y Lighthouse; priorizar LCP y CLS.</li>
+        <li>Agregar un README en el repositorio que documente las decisiones de diseño y accesibilidad implementadas.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="container">
+      <p>Investigación Corta.</p>
+    </div>
+  </footer>
+</body>
+</html>
